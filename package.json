@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "babel-node --inspect --inspect=5858 ./index.js",
+    "build": "babel ./src --out-dir ./bin"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "koa": "^2.13.0",
+    "koa-static": "^5.0.0",
+    "mysql": "^2.18.1",
+    "request": "^2.88.2",
+    "socket.io": "^2.3.0"
+  }
+}
